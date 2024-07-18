@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.link,
+.title{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 24px;
+
+}
+.title{
+    top: 15px;
+    font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+font-weight: 900;
+
+}
+.link{
+    font-family: "Tiny5", sans-serif;
+    color: white;
+    transition: .3s ease-in-out;
+    bottom: 30px;
+}
