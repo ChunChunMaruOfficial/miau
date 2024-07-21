@@ -34,10 +34,42 @@ svg {
     color: white;
     transition: .2s ease-in-out;
     bottom: 30px;
+
+    :hover {
+        cursor: pointer;
+        scale: 1.03;
+    }
 }
 
 .modal {
     width: 50%;
+}
+
+.date {
+    position: absolute;
+    display: inline-flex;
+    gap: 12px;
+    top: 12px;
+    left: 12px;
+
+    >.active {
+        border-bottom: 2px solid #8d99ae;
+    }
+
+    >p {
+        transition: .2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.03;
+        }
+    }
+}
+
+.count {
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 
 @media (max-width: 768px) {
@@ -46,7 +78,7 @@ svg {
         flex-wrap: nowrap;
         overflow-y: auto;
         gap: 50px;
-        
+
     }
 
     .link,
@@ -56,9 +88,10 @@ svg {
         width: fit-content;
         position: inherit;
         transform: none;
-        margin-block: 25px;
+        margin-block: 45px 25px;
     }
-    .link{
+
+    .link {
         order: 1;
     }
 }

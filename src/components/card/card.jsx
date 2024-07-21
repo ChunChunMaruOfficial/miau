@@ -11,9 +11,9 @@ export default function Card({ obj }) {
             <div>
                 <p>{obj.text}</p>
                 <br />
-                <p>{obj.date}</p>
+                <p>{obj.date + ' ' + obj.year}</p>
             </div>
-            <Modal isOpen={modalIsOpen}  onRequestClose={() => setModalIsOpen(false)}
+            <Modal isOpen={modalIsOpen} className={style.modd} onRequestClose={() => setModalIsOpen(false)}
                 style={{
                     overlay: {
                         position: 'fixed',
