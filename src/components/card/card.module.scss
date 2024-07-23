@@ -2,7 +2,7 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    height: 80vh;
+    height: 60vh;
     margin-block: auto;
     margin-inline: 50px;
     transition: .3s ease-in-out;
@@ -38,6 +38,12 @@
     }
 }
 
+
+@media (max-width: 2000px) {
+    .wrapper {
+        height: 80vh;
+    }
+}
 @media (max-width: 768px) {
     .wrapper {
         height: auto;
