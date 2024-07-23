@@ -36,12 +36,13 @@ export default function Card({ obj }) {
                         border: '1px solid #000',
                         WebkitOverflowScrolling: 'touch',
                         borderRadius: '8px',
-                        padding: '0px'
+                        padding: '0px',
+                        overflow: 'hidden'
 
                     }
                 }}
             >
-                <div >
+                <div className={style.imgparent} >
                     <img src={obj.imgUrl} />
                 </div>
 

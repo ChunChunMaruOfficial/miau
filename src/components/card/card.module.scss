@@ -36,8 +36,13 @@
         flex-direction: column;
         justify-content: space-between;
     }
-}
 
+}
+    .imgparent{
+        width: 103%;
+        height: 103%;
+        overflow: auto;
+    }
 
 @media (max-width: 2000px) {
     .wrapper {
